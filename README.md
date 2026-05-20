@@ -14,7 +14,7 @@ Solo-Entwickler, Sembach bei Kaiserslautern.
 
 ### Aktive Projekte
 
-**NEXUS** — Cross-Tool-Memory-System für LLM-Agents. Drei-Tier-Architektur (Working / Plastic / Stable Memory) mit automatischer Konsolidierung. Hybrid-Retrieval (pgvector dense + BM25 sparse) mit Phrase-Match-Boost und Cross-Encoder-Reranking. ADWIN-basiertes Drift-Monitoring. Exponiert als MCP-Server (stdio + HTTP/Railway) mit Tool-Output-Wrapping gegen Memory-Hijack. Eigene OWL-2-Ontologie-Schicht für strukturiertes Wissen.
+**NEXUS** — Cross-Tool-Memory-System für LLM-Agents. Mehrstufige Memory-Hierarchie mit automatischer Konsolidierung. Hybrid-Retrieval auf PostgreSQL/pgvector mit Reranking-Layer. Drift-Monitoring auf Embedding-Ebene. Exponiert als MCP-Server (stdio + HTTP), gehärtet gegen Memory-Hijack auf Tool-Output-Ebene. Strukturiertes Wissen über separate Ontologie-Schicht.
 
 **PairGuide** — DSGVO-konforme Paar-Mediations- und Coaching-App. FastAPI-Backend mit 165 Endpoints, Flutter-Frontend. Multi-Agent-Pipeline (Claude + GPT-5 + Sonar) mit Fallback-Router, Streaming-Output und Audit-Logger. Pseudonymisierung vor jedem LLM-Call, encryption-at-rest, vollständige DSGVO-Endpoint-Coverage (Art. 7, 15, 17, 20). mypy --strict, 200+ Tests inkl. Property-Based.
 
@@ -33,3 +33,7 @@ Architektur und Spec werden in Claude (Desktop/Code) entworfen, Implementation d
 - Test-Coverage ≥80% (≥95% auf sicherheitskritischen Pfaden), pytest + Hypothesis, vitest
 - snake_case in DB und Python, camelCase in TS, REST-Routen im Plural
 - Konventionelle Commits, Feature-Branches, kein direkt-commit auf main
+
+### Kontakt
+
+[patric-zeller.de](https://patric-zeller.de) — [info@patric-zeller.de](mailto:info@patric-zeller.de)
