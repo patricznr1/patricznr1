@@ -7,7 +7,7 @@ Solo-Entwickler, Sembach bei Kaiserslautern.
 **Backend** — Python 3.11+ (FastAPI, SQLAlchemy 2.x async, Pydantic V2), Node.js / TypeScript
 **Frontend Web** — Next.js, React, Tailwind
 **Frontend Mobile** — Flutter 3.38, Dart 3.10, Riverpod, Dio
-**Daten** — PostgreSQL 16 mit pgvector, Redis, Alembic
+**Daten** — PostgreSQL 16 mit pgvector, QuestDB (Zeitreihen), Redis, Alembic
 **AI** — Anthropic (Claude Opus/Sonnet/Haiku 4.5/4.7), OpenAI (GPT-5 + embeddings), Perplexity (Sonar)
 **Infra** — Railway, Vercel, GitHub Actions
 **IAP** — RevenueCat
@@ -21,6 +21,10 @@ Solo-Entwickler, Sembach bei Kaiserslautern.
 **Lerncoach** — KI-Lernassistent für strukturiertes Lernen. Node.js/TypeScript-Backend, Next.js-Frontend. SM-2 Spaced-Repetition-Algorithmus, Lerntyp-Profil-Adaption, mehrere Themen-Räume. 7-Schichten Defense-in-Depth (Rate-Limiting, Prompt-Injection-Detection, Output-Guard, Security-Event-Logging). Aktuell im Schultest-Betrieb.
 
 **KI-Karriere-Assistent** — Multi-Agent-System für HR-/Karriere-Beratung. Fünf spezialisierte Agenten, Provider-agnostische LLM-Abstraktion, Output-Klassifikation und -Ranking.
+
+**GoldPilot** — Entscheidungsunterstützung für Daytrading mit Knock-Out-Derivaten auf Gold. FastAPI-Backend, Next.js-Frontend, duale Datenbank-Strategie (Zeitreihen + relational), Event-Bus über Redis Streams. Multi-Timeframe-Analyse mit Voting über mehrere technische Indikatoren, separater Risiko-Layer mit Veto-Recht, eigene Derivate-Übersetzungsschicht inklusive KO-Puffer-Logik. Phase 1 MVP in Entwicklung. Keine autonomen Handelsentscheidungen, keine Anlageberatung.
+
+**prompt-build-engine** — Meta-Werkzeug für mehrstufiges Prompt-Engineering und Projekt-Setup-Generierung. Next.js + TypeScript-Backend mit Drizzle ORM. Bundles für Boilerplate-Erzeugung (Agent-/Skill-Konfigurationen pro Sprache) und für Compliance-/Security-Templates (OWASP, DSGVO, EU AI Act, NIST CSF). Aktiv in Entwicklung.
 
 ### Arbeitsweise
 
