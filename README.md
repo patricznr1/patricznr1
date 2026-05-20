@@ -1,6 +1,8 @@
 ## patricznr1
 
-Solo-Entwickler, Sembach bei Kaiserslautern.
+Solo-Entwickler, Sembach bei Kaiserslautern. Baue KI-Systeme für den Bereich menschlicher Interaktion — Therapie, Coaching, Bildung. Im Zentrum steht nicht das Sprachmodell, sondern die Architektur darum herum: wie ein Agent Erkenntnisse über Sitzungen hinweg speichert, zwischen situativer Beobachtung und validiertem Muster unterscheidet, gegen Halluzination und Manipulation gehärtet ist und eine Krise nicht übersieht.
+
+DSGVO-Konformität und EU-AI-Act-Reife sind Architekturprinzip, keine nachträgliche Schicht.
 
 ### Stack
 
@@ -14,9 +16,9 @@ Solo-Entwickler, Sembach bei Kaiserslautern.
 
 ### Aktive Projekte
 
-**NEXUS** — Cross-Tool-Memory-System für LLM-Agents. Mehrstufige Memory-Hierarchie mit automatischer Konsolidierung. Hybrid-Retrieval auf PostgreSQL/pgvector mit Reranking-Layer. Drift-Monitoring auf Embedding-Ebene. Exponiert als MCP-Server (stdio + HTTP), gehärtet gegen Memory-Hijack auf Tool-Output-Ebene. Strukturiertes Wissen über separate Ontologie-Schicht.
+**NEXUS** — Cross-Tool-Memory-System für LLM-Agents. Drei-Schichten-Gedächtnis mit automatischer Konsolidierung über die Tiers hinweg. Hybrid-Retrieval auf PostgreSQL/pgvector mit Reranking-Layer. Drift-Monitoring auf Embedding-Ebene. Exponiert als MCP-Server (stdio + HTTP), gehärtet gegen Memory-Hijack auf Tool-Output-Ebene. Strukturiertes Wissen über separate Ontologie-Schicht.
 
-**PairGuide** — DSGVO-konforme Paar-Mediations- und Coaching-App. FastAPI-Backend mit 165 Endpoints, Flutter-Frontend. Multi-Agent-Pipeline (Claude + GPT-5 + Sonar) mit Fallback-Router, Streaming-Output und Audit-Logger. Pseudonymisierung vor jedem LLM-Call, encryption-at-rest, vollständige DSGVO-Endpoint-Coverage (Art. 7, 15, 17, 20). mypy --strict, 200+ Tests inkl. Property-Based.
+**PairGuide** — DSGVO-konforme Paar-Mediations- und Coaching-App. FastAPI-Backend mit 165 Endpoints, Flutter-Frontend. Mehrstufige Verifikations-Pipeline für therapeutische KI-Antworten mit Multi-Provider-Fallback, Streaming-Output und Audit-Logger. Pseudonymisierung vor jedem LLM-Call, encryption-at-rest, vollständige DSGVO-Endpoint-Coverage (Art. 7, 15, 17, 20). mypy --strict, 200+ Tests inkl. Property-Based.
 
 **Lerncoach** — KI-Lernassistent für strukturiertes Lernen. Node.js/TypeScript-Backend, Next.js-Frontend. SM-2 Spaced-Repetition-Algorithmus, Lerntyp-Profil-Adaption, mehrere Themen-Räume. 7-Schichten Defense-in-Depth (Rate-Limiting, Prompt-Injection-Detection, Output-Guard, Security-Event-Logging). Aktuell im Schultest-Betrieb.
 
